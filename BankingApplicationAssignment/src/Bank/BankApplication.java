@@ -36,7 +36,6 @@ public class BankApplication extends GeneralAcoount{
 					try {
 						withdraw();
 					} catch (NonExistingBankAccountException e) {
-					
 						System.out.println(e);
 					}					
 					break;
@@ -50,11 +49,11 @@ public class BankApplication extends GeneralAcoount{
 					break;
 				}
 				case 5:
-				try {
-					display();
-				} catch (NonExistingBankAccountException e) {
-					System.out.println(e);
-				}					
+					try {
+						display();
+					} catch (NonExistingBankAccountException e) {
+						System.out.println(e);
+					}					
 					break;
 				case 6:{
 					System.out.println("Thanks for Using!");
@@ -105,7 +104,7 @@ public class BankApplication extends GeneralAcoount{
 			}else if(val<0) {
 				System.out.println("Withdrawd: "+val);
 			}else {
-				System.out.println("No trancation");
+				//System.out.println("No trancation");
 			}
 		}
 		
